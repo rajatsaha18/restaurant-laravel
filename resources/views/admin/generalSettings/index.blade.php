@@ -106,6 +106,18 @@ General Settings
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
+                                <label for="formrow-email-input">Discount</label>
+                                @if (!empty($website))
+                                <input type="text" name="main_discount" value="{{$website->main_discount}}" class="form-control" placeholder="Discount" id="formrow-email-input">
+                                @else
+                                <input type="text" name="main_discount"  class="form-control" placeholder="Discount" id="formrow-email-input">
+
+                                @endif
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
                                 <label for="formrow-password-input">Logo</label>
                                 <input type="file" name="logo" class="form-control" placeholder="logo">
                                 @if (!empty($website))

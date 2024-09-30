@@ -70,7 +70,8 @@ class GeneralSettingsController extends Controller
     {
         $this->website = GeneralWebsite::first();
         if($this->website){
-            $this->website->title       = $request->title;
+            $this->website->title               = $request->title;
+            $this->website->main_discount       = $request->main_discount;
 
             $logo_image                 = $request->file('logo');
             if($logo_image)

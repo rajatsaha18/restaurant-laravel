@@ -24,7 +24,7 @@ Category
                         <th width="20%">Action</th>
                         <th width="10%">Name</th>
                         <th width="10%">Image</th>
-                        <th>Status</th>
+                        <th width="10%">Status</th>
 
                     </tr>
                     </thead>
@@ -57,6 +57,9 @@ Category
 
                     </tbody>
                 </table>
+                <div>
+                    {{ $categories->links() }}
+                </div>
 
             </div>
         </div>

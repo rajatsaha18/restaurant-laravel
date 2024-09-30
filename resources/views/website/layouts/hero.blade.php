@@ -33,13 +33,20 @@
                     <div class="hero-inner">
                         <div class="hero-overlay" data-ani="slideinright" data-ani-delay="0.7s"></div>
                         <div class="container th-container">
+                            @php
+                                $mainDiscount = DB::table('general_websites')->first();
+                            @endphp
+                            @if($mainDiscount && $mainDiscount->main_discount)
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card card-body" id="bg_color">
-                                        <h3 class="text-center py-3">All Food Discount: 50%</h3>
+                                        <h3 class="text-center py-3">All Food Discount: {{ $mainDiscount->main_discount }}</h3>
                                     </div>
                                 </div>
                             </div>
+
+                            @endif
+
                             <div class="hero-style3 mt-1">
                                 <span class="hero-subtitle text-center" data-ani="slideinup" data-ani-delay="0.2s">Healthy & Quality</span>
                                 <h1 class="hero-title4" data-ani="slideinup" data-ani-delay="0.4s">Delicious</h1>

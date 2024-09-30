@@ -17,7 +17,7 @@ class CategoryController extends Controller
     }
     public function manage()
     {
-        $this->categories = Category::where('status', 1)->get();
+        $this->categories = Category::where('status', 1)->paginate(10);
 
         return view('admin.category.manage',['categories' => $this->categories]);
     }
