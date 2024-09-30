@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from themesbrand.com/skote/layouts/vertical/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2020 15:08:04 GMT -->
+<head>
+
+        <meta charset="utf-8" />
+        <title>Login | Business Solution - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{'public/admin/'}}{{'public/admin/'}}assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="{{'public/admin/'}}assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="{{'public/admin/'}}assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="{{'public/admin/'}}assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <div class="account-pages my-5 pt-sm-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card overflow-hidden">
+                            <div class="bg-soft-primary">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="text-primary p-4">
+                                            <h5 class="text-primary">Welcome Back !</h5>
+                                            <p>Sign in to continue to Business Solution.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 align-self-end">
+                                        <img src="{{'public/admin/'}}assets/images/profile-img.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div>
+                                    <a href="">
+                                        <div class="avatar-md profile-user-wid mb-4">
+                                            <span class="avatar-title rounded-circle bg-light">
+                                                <img src="{{'public/admin/'}}assets/images/logo.svg" alt="" class="rounded-circle" height="34">
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2">
+                                    <form class="form-horizontal" action="{{route('login')}}" method="POST">
+                                        @csrf
+
+                                        <div class="form-group">
+                                            <label for="username">Email</label>
+                                            <input type="email" class="form-control" name="email" id="username" placeholder="Email">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userpassword">Password</label>
+                                            <input type="password" class="form-control" name="password" id="userpassword" placeholder="Enter password">
+                                        </div>
+
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button>
+                                        </div>
+
+
+
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+
+                            <div>
+                                <p>Don't have an account ? <a href="{{route('register')}}" class="font-weight-medium text-primary"> Signup now </a> </p>
+                                <p>© 2024 Business Solution. Crafted with <i class="mdi mdi-heart text-danger"></i> by Business Solution</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <script src="{{'public/admin/'}}assets/libs/jquery/jquery.min.js"></script>
+        <script src="{{'public/admin/'}}assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{'public/admin/'}}assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="{{'public/admin/'}}assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="{{'public/admin/'}}assets/libs/node-waves/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="{{'public/admin/'}}assets/js/app.js"></script>
+    </body>
+
+<!-- Mirrored from themesbrand.com/skote/layouts/vertical/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2020 15:08:04 GMT -->
+</html>
