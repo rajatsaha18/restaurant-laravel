@@ -29,6 +29,13 @@ Slider | Edit
                           <textarea name="description" class="form-control" id="horizontal-firstname-input">{{$slider->description}}</textarea>
                         </div>
                     </div>
+                    <div class="form-group row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Discount</label>
+                        <div class="col-sm-9">
+                          <input type="text" name="discount" value="{{ $slider->discount }}" class="form-control" id="horizontal-firstname-input">
+                          <span class="text-danger">{{$errors->has('discount') ? $errors->first('discount') : ''}}</span>
+                        </div>
+                    </div>
 
                     <div class="form-group row mb-4">
                         <label for="horizontal-email-input" class="col-sm-3 col-form-label">Slider Image</label>

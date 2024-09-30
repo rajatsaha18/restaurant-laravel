@@ -30,6 +30,20 @@ Slider
 
                         </div>
                     </div>
+                    {{-- <div class="form-group row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Slider Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" name="name" class="form-control" id="horizontal-firstname-input">
+                          <span class="text-danger">{{$errors->has('name') ? $errors->first('name') : ''}}</span>
+                        </div>
+                    </div> --}}
+                    <div class="form-group row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Discount</label>
+                        <div class="col-sm-9">
+                          <input type="text" name="discount" class="form-control" id="horizontal-firstname-input">
+                          <span class="text-danger">{{$errors->has('discount') ? $errors->first('discount') : ''}}</span>
+                        </div>
+                    </div>
                     <div class="form-group row mb-4">
                         <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Description</label>
                         <div class="col-sm-9">

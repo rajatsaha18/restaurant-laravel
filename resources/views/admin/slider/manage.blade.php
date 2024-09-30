@@ -21,6 +21,7 @@ Slider Manage
                         <th>Sl</th>
                         <th>Name</th>
                         <th>Image</th>
+                        <th>Discount</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -33,6 +34,7 @@ Slider Manage
                             <td>{{$loop->iteration}}</td>
                             <td>{{$slider->name}}</td>
                             <td><img src="{{asset($slider->image)}}" alt="category-image" height="70px" width="90px"></td>
+                            <td>{{$slider->discount}}%</td>
                             <td>
                                 @if ($slider->status == 1)
                                 <span class="badge rounded-pill bg-success">Active</span>

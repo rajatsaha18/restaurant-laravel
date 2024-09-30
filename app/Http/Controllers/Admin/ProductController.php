@@ -32,7 +32,7 @@ class ProductController extends Controller
     }
     public function manage()
     {
-        $this->product = Product::where('status',1)->get();
+        $this->product = Product::where('status',1)->paginate(10);
         return view('admin.product.manage',['products' => $this->product]);
     }
     public function create(Request $request)

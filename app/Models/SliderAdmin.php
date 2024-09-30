@@ -29,6 +29,7 @@ class SliderAdmin extends Model
     {
         self::$slider = new SliderAdmin();
         self::$slider->name           = $request->name;
+        self::$slider->discount       = $request->discount;
         self::$slider->description    = $request->description;
         self::$slider->image          = self::getImageUrl($request->file('image'));
         self::$slider->status         = $request->status;
@@ -52,6 +53,7 @@ class SliderAdmin extends Model
             self::$imageUrl = self::$slider->image;
         }
         self::$slider->name           = $request->name;
+        self::$slider->discount       = $request->discount;
         self::$slider->description    = $request->description;
         self::$slider->image          = self::$imageUrl;
         self::$slider->status         = $request->status;

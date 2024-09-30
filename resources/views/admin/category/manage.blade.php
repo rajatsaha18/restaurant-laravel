@@ -17,7 +17,7 @@ Category
                 <a href="{{route('category.add')}}"><button type="button" class="btn mb-3" style="background-color: #2c3e50; color:#2ecc71;"><i class="fa-solid fa-folder-plus"></i> Add Category</button></a>
 
 
-                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <table id="datatable" class="table table-bordered table-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                     <thead>
                     <tr>
                         <th width="10%">Sl</th>
@@ -25,7 +25,7 @@ Category
                         <th width="10%">Name</th>
                         <th width="10%">Image</th>
                         <th>Status</th>
-                        
+
                     </tr>
                     </thead>
 
@@ -48,7 +48,7 @@ Category
 
                                 @endif
                             </td>
-                            
+
 
                         </tr>
 

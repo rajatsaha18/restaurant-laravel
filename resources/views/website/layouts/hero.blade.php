@@ -8,6 +8,10 @@
             margin-left: 900px!important;
         }
     }
+    #bg_color
+    {
+        color: #C59D5F!important;
+    }
 </style>
 <div class="th-hero-wrapper hero-3" id="hero">
     <div class="banner-area">
@@ -29,7 +33,14 @@
                     <div class="hero-inner">
                         <div class="hero-overlay" data-ani="slideinright" data-ani-delay="0.7s"></div>
                         <div class="container th-container">
-                            <div class="hero-style3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card card-body" id="bg_color">
+                                        <h3 class="text-center py-3">All Food Discount: 50%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-style3 mt-1">
                                 <span class="hero-subtitle text-center" data-ani="slideinup" data-ani-delay="0.2s">Healthy & Quality</span>
                                 <h1 class="hero-title4" data-ani="slideinup" data-ani-delay="0.4s">Delicious</h1>
                                 <h2 class="hero-title3" data-ani="slideinup" data-ani-delay="0.5s">Food Menu</h2>
@@ -37,16 +48,15 @@
                             </div>
                         </div>
                         <div class="hero-img">
-                            <div class="shape1" data-ani="slideinup" data-ani-delay="0.5s">
-                                <img src="{{'public/website/assets/img/hero/hero_shape_3_3.png'}}" alt="shape">
-                            </div>
-                            <!--<div class="offer" data-ani="slideinup" data-ani-delay="0.4s">-->
-                            <!--    <img src="{{'public/website/assets/img/hero/hero_offer_1.svg'}}" alt="shape">-->
-                            <!--</div>-->
                             <div class="img1" data-ani="slideinright" data-ani-delay="0.1s">
+                                <h3 class="text-center"><span>Discount:{{ $slider->discount }}%</span></h3>
+
                                 <img src="{{asset($slider->image)}}" alt="Image">
                             </div>
+
+
                         </div>
+
                     </div>
                 </div>
 

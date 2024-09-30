@@ -17,7 +17,7 @@ Product | Manage
                 <a href="{{route('product.add')}}"><button type="button" class="btn mb-3" style="background-color: #2c3e50; color:#2ecc71;"><i class="fa-solid fa-folder-plus"></i> Add Product</button></a>
 
 
-                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <table id="datatable" class="table table-bordered table-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                     <thead>
                     <tr>
                         <th width="10%">Sl</th>
@@ -26,7 +26,7 @@ Product | Manage
                         <th width="10%">Product</th>
                         <th width="10%">Image</th>
                         <th width="15%">Status</th>
-                        
+
                     </tr>
                     </thead>
 
@@ -40,7 +40,7 @@ Product | Manage
                                 <a href="{{route('product.delete',$product->id)}}" class="btn btn-outline-danger btn-sm" onclick="return confirm('Are your sure Delete This ?')"><i class="fa fa-trash"></i></a>
                             </td>
                             <td>{{$product->category->name}}</td>
-                            
+
                             <td>{{$product->name}}</td>
                             <td><img src="{{asset($product->image)}}" alt="category-image" height="50px" width="50px"></td>
                             <td>
@@ -51,7 +51,7 @@ Product | Manage
 
                                 @endif
                             </td>
-                            
+
 
                         </tr>
 
@@ -60,6 +60,9 @@ Product | Manage
 
                     </tbody>
                 </table>
+                <div>
+                    {{ $products->links() }}
+                </div>
 
             </div>
         </div>
